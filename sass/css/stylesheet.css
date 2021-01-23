@@ -487,6 +487,10 @@ header {
   padding: 100px 15px 90px;
 }
 
+.products-catalog {
+  scroll-behavior: smooth;
+}
+
 .products__triggers {
   width: 100%;
   display: flex;
@@ -936,4 +940,3 @@ header {
     margin-bottom: 0;
   }
 }
-/*# sourceMappingURL=stylesheet.css.map */

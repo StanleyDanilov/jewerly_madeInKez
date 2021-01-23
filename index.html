@@ -9,26 +9,56 @@
 <body>
 
 <main class="main">
-  <header class="header">
-    <ul class="header__navbar">
-      <li class="header__navbar__item">
-        <a href="#" class="header__navbar__link">Контрагентам</a>
-        <a href="#" class="header__navbar__link">Дизайнерам</a>
-        <a href="#" class="header__navbar__link">Вакансии</a>
+  <header>
+    <ul class="navbar">
+      <li class="navbar__item navbar__left-side">
+        <a href="#" class="navbar__link">Контрагентам</a>
+        <a href="#" class="navbar__link">Дизайнерам</a>
+        <a href="#" class="navbar__link">Вакансии</a>
       </li>
-      <a href="#" class="header__navbar__item header__logo"><img src="images/logo.svg" alt="logo"></a>
-      <li class="header__navbar__item">
-        <div class="header__search">
-          <a href="#" class="header__navbar__link"><img src="images/search-icon.svg" alt="search" class="search-icon">Поиск</a>
+      <li class="navbar__item"><a href="#" class="logo-icon"><img src="images/logo.svg" alt="logo"></a></li>
+      <li class="navbar__item navbar__right-side">
+        <div class="navbar__item__search">
+          <a href="#" class="navbar__link"><img src="images/search-icon.svg" alt="search" class="search-icon">Поиск</a>
         </div>
-        <a href="#" class="header__navbar__link">Вход/Регистрация</a>
-        <a href="#" class="header__navbar__link"><img src="images/man-icon.svg" alt="man"></a>
-        <a href="#" class="header__navbar__link"><img src="images/heart-icon.svg" alt="like"></a>
+        <a href="#" class="navbar__link">Вход/Регистрация</a>
+        <a href="#" class="navbar__link"><img src="images/man-icon.svg" alt="man"></a>
+        <a href="#" class="navbar__link"><img src="images/heart-icon.svg" alt="like"></a>
       </li>
+      <!-- drop-menu start -->
+      <div class="drop-menu">
+        <button class="drop-menu__btn-open">
+          <img src="/images/hamburger-btn-menu.svg" alt="">
+        </button>
+        <div class="drop-menu__content">
+          <div class="drop-menu__top">
+            <a href="#" class="logo"><img src="images/logo.svg" alt="logo"></a>
+            <img class="drop-menu__btn-close" src="/images/hamburger-btn-close.svg" alt="">
+          </div>
+          <ul class="drop-menu__main">
+            <li class="drop-menu__main__item"><a href="#" class="drop-menu__main__link">Контрагентам</a></li>
+            <li class="drop-menu__main__item"><a href="#" class="drop-menu__main__link">Дизайнерам</a></li>
+            <li class="drop-menu__main__item"><a href="#" class="drop-menu__main__link">Вакансии</a></li>
+            <li class="drop-menu__main__item"><a href="#" class="drop-menu__main__link">Вход/Регистрация</a></li>
+          </ul>
+          <div class="drop-menu__icons">
+            <a href="#" class="drop-menu__icons__item"><img src="images/drop-menu-user.svg" alt="man"></a>
+            <a href="#" class="drop-menu__icons__item"><img src="images/drop-menu-like.svg" alt="like"></a>
+          </div>
+          <div class="drop-menu__social">
+            <a href="#" class="drop-menu__social__item"><img src="/images/drop-menu-youtube.svg" alt="youtube"></a>
+            <a href="#" class="drop-menu__social__item"><img src="/images/drop-menu-vk.svg" alt="vk"></a>
+            <a href="#" class="drop-menu__social__item"><img src="/images/drop-menu-facebook.svg" alt="facebook"></a>
+            <a href="#" class="drop-menu__social__item"><img src="/images/drop-menu-telegram.svg" alt="telegram"></a>
+            <a href="#" class="drop-menu__social__item"><img src="/images/drop-menu-etsy.svg" alt="etsy"></a>
+          </div>
+        </div>
+      </div>
+      <!-- drop-menu end -->
     </ul>
   </header>
   <h1 class="main__title">Долго, дорого, богато!</h1>
-  <a href="#products-catalog" class="btn main-btn">каталог изделий</a>
+  <a href="#products-catalog" class="btn main__btn">каталог изделий</a>
   <div class="main__bottom">
     <img src="images/fine-jewelry.svg" alt="item" class="main__bottom__item">
     <img src="images/fine-jewelry.svg" alt="item" class="main__bottom__item">
@@ -37,6 +67,14 @@
     <img src="images/fine-jewelry.svg" alt="item" class="main__bottom__item">
     <img src="images/fine-jewelry.svg" alt="item" class="main__bottom__item">
   </div>
+
+  <div class="cookie-alert">
+    <h6 class="cookie-alert__title">Cookie & Privacy</h6>
+    <p class="cookie-alert__text">This website uses cookies. By continuing to browse the site you are agreeing to our use of cookies.</p>
+    <a href="#" class="cookie-alert__link">Find out more</a>
+    <button class="btn cookie-alert__btn">I agree</button>
+  </div>
+
 </main>
 
 <section class="products">
@@ -109,7 +147,7 @@
     <span class="pre-title">Не знаете, что выбрать?</span>
     <h2 class="section-title">Посетите наши салоны в Москве</h2>
     <p class="stores__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.</p>
-    <a href="#" class="btn stores-btn">наши салоны</a>
+    <a href="#" class="btn stores__btn">наши салоны</a>
   </div>
 </section>
 
@@ -130,7 +168,7 @@
       <span class="cart-title advice__cards__title">Как выбрать обручальные кольца молодоженам</span>
     </a>
   </div>
-  <a href="#" class="btn advice-btn">читать наш блог</a>
+  <a href="#" class="btn advice__btn">читать наш блог</a>
 </section>
 
 <section class="social">
@@ -161,7 +199,7 @@
       <div class="subscription__content__wrap">
         <form class="subscription__content__form">
           <input class="subscription__content__input" type="text" placeholder="Ваш e-mail">
-          <button type="submit" class="btn subscription-btn">отправить</button>
+          <button type="submit" class="btn subscription__btn">отправить</button>
         </form>
       </div>
     </div>

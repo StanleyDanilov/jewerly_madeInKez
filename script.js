@@ -1,3 +1,20 @@
+// ========== Drop menu toggle ==========
+document.querySelector('.drop-menu__btn-open').addEventListener('click', function() {
+  document.querySelector('.drop-menu__content').classList.add('drop-menu__content--active')
+})
+
+document.querySelector('.drop-menu__btn-close').addEventListener('click', function() {
+  document.querySelector('.drop-menu__content').classList.remove('drop-menu__content--active')
+})
+
+
+// ========== Cookie alert ==========
+document.querySelector('.cookie-alert__btn').addEventListener('click', function() {
+  document.querySelector('.cookie-alert').classList.add('submited-cookie')
+})
+
+
+
 // ========== Products Tabs ==========
 document.querySelectorAll('.products__triggers__item').forEach((item) => {
   item.addEventListener('click', function (e) {
@@ -19,32 +36,19 @@ document.querySelectorAll('.products__triggers__item').forEach((item) => {
 document.querySelector('.products__triggers__item').click()
 
 
-// ========== Smoothly transition ==========
 
-const productsCatalog = document.getElementById('products-catalog')
-const goToCatalog = document.querySelector('.main-btn')
-
-function handleButtonClick() {
-   productsCatalog.scrollIntoView({
-     behavior: 'smooth'
-    })
+// ========== Smooth scroll ==========
+function scrollTo(element) {
+  window.scroll({
+    left: 0,
+    top: element.offsetTop,
+    behavior: 'smooth'
+  })
 }
 
-goToCatalog.addEventListener('click', handleButtonClick)
+const mainBtn = document.querySelector('.main__btn')
+const productsCatalog = document.getElementById('products-catalog')
 
-
-// different type of smooth
-
-// const productCatalog = document.querySelector()
-
-// for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault()
-    
-//     const blockID = anchor.getAttribute('href').substr(1)
-    
-//     document.getElementById(blockID).scrollIntoView({
-//       behavior: 'smooth'
-//     })
-//   })
-// }
+mainBtn.addEventListener('click', () => {
+  scrollTo(productsCatalog)
+})
